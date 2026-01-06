@@ -11,7 +11,7 @@ const port = 3001; // Node.js listens here; Nginx proxies from 443.
 // CORS Configuration
 // **CRITICAL**: Replace with your domain to restrict access.
 app.use((req, res, next) => {
-    const allowedOrigin = 'https://your-covert-server.com'; // EDIT THIS
+    const allowedOrigin = 'https://test-page-xy7.pages.dev'; // EDIT THIS
     const origin = req.headers.origin;
     if (origin && origin === allowedOrigin) {
         res.setHeader('Access-Control-Allow-Origin', allowedOrigin);
